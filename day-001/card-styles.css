@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #e6e3e1;
+    margin: 3em 3em;
+    padding: 20px;
+}
+
+.card-containers-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.card-board {
+    background-color: #588ac1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2em 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 200px;
+    animation: card-board-hover 2ms ease-in-out autoplay infinite;
+    cursor: pointer;
+}
+.card-headline {
+    font-size: 2.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.card-paragraph {
+    font-size: 1em;
+    color: #f0f0f0;
+    line-height: 1.4;
+    width: 255px;
+}
+.card-button a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #588ac1;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+.card-button a:hover {
+    background-color: #ffbc6f;
+    color: #1b1b1b;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff9cd;
+
+    animation: button-hover 0.3s ease-in-out;
+}
+.card-circle-button {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    color: #588ac1;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+    position: relative;
+}
+.card-circle-button:hover {
+    background-color: #ffbc6f;
+    color: #1b1b1b;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff9cd;
+    animation: circle-button-hover 5800.0s ease-out forwards;
+
+}
+.card-circle-button:active {
+    transform: scale(0.95);
+}
+
+.card-circle-button img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+.card-option-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card-board:hover {
+    animation: card-board-hover 0.5s ease-in-out forwards;
+}
+@keyframes button-hover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes circle-button-hover {
+    0% {
+        transform: translateX(0em);
+    }
+    100% {
+        transform: translateX(4em);
+    }
+}
+@keyframes card-board-hover {
+    0% {
+        background-color: #86b0dd;
+    }
+    25% {
+        background-color: #588ac1;
+    }
+    50% {
+        background-color: #6088de;
+    }
+    100% {
+        background-color: #336cc8;
+    }   
+}
