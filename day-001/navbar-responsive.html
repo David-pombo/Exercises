@@ -17,6 +17,13 @@
                 <a href="#">Design!</a>
             </div>
 
+            <!-- Hamburger Button -->
+            <div class="wb-hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <ul class="wb-navbar-ul">
                 <li class="wb-navbar-li-actived"><a href="#">Home</a></li>
                 <li class="wb-navbar-li"><a href="#">About</a></li>
@@ -31,6 +38,17 @@
         </nav>
 
     </header>
+
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.querySelector('.wb-navbar-ul');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+
 
 </body>
 </html>

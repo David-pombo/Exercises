@@ -91,3 +91,45 @@ header {
     text-align: center;
 
 }
+/* Hamburger Menu */
+.wb-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.wb-hamburger span {
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+
+/************ THE RESPONSIVE DESIGN ************/
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+
+    .wb-hamburger {
+        display: flex;
+    }
+
+    .wb-navbar-ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #2f7bdf;
+        border-radius: 8px;
+        padding: 15px 0;
+    }
+
+    .wb-navbar-ul.active {
+        display: flex;
+    }
+
+    .wb-btn-login {
+        margin-top: 10px;
+    }
+}

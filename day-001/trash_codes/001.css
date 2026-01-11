@@ -1,0 +1,57 @@
+/******************** RESPONSIVE *************************/
+
+/* Tablet */
+@media (max-width: 1024px) {
+    body {
+        margin: 3em;
+    }
+
+    .Navbar-logotype a {
+        font-size: 2em;
+    }
+
+    .wb-navbar-ul {
+        gap: 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    body {
+        margin: 1em;
+        padding: 0;
+    }
+
+    .wb-navbar-containers {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Navbar-logotype a {
+        font-size: 1.8em;
+    }
+
+    .wb-navbar-ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        gap: 10px;
+    }
+
+    .wb-navbar-ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .wb-navbar-ul a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .wb-btn-login {
+        width: 120px;
+        height: 45px;
+    }
+}
